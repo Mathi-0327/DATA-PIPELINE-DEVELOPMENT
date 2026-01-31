@@ -1,0 +1,18 @@
+
+
+project:
+  name: Data Pipeline
+  version: v1.0
+
+paths:
+  raw_data: data/raw/raw_data.csv
+  processed_data: data/processed/processed_v1.csv
+
+preprocessing:
+  numeric_imputation: mean
+  categorical_imputation: most_frequent
+  scaling: standard
+
+logging:
+  log_file: pipeline.log
+  level: INFO
